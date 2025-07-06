@@ -1,0 +1,57 @@
+
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>আমার ভিডিও</title>
+  <style>
+    body {
+      margin: 0;
+      background-color: #000;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      font-family: sans-serif;
+    }
+    .video-thumbnail {
+      position: relative;
+      width: 360px;
+      height: 202px;
+      background-image: url('https://via.placeholder.com/360x202.png?text=My+Video');
+      background-size: cover;
+      background-position: center;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.6);
+      cursor: pointer;
+    }
+    .play-btn {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 60px;
+      height: 60px;
+      background: rgba(255,255,255,0.8);
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .play-btn::before {
+      content: '';
+      display: inline-block;
+      border-style: solid;
+      border-width: 12px 0 12px 20px;
+      border-color: transparent transparent transparent #000;
+      margin-left: 4px;
+    }
+  </style>
+</head>
+<body>
+  <a class="video-thumbnail" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">
+    <div class="play-btn"></div>
+  </a>
+</body>
+</html>
